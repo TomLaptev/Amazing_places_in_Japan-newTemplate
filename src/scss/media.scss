@@ -1,0 +1,417 @@
+@media screen and (max-width: 1280px) {
+  .login-form {
+      top: 60px;
+  }
+
+  .header-sticky-content {
+    padding-top: 15px;
+  }
+  .header-top-row {
+    padding: 10px 15px;
+  }
+
+  .header-info-row {
+    margin-bottom: 65px;
+    padding-left: 15px;
+  }
+
+  .header-form-row {
+    padding-left: 15px;
+  }
+
+  .intro {
+    margin-bottom: 0;
+    box-shadow: none;
+  }
+
+  .footer {
+    height: 200px;
+
+    &__wrapper {
+      margin: auto 8%;
+    }
+
+    &__logo {
+      width: 39%;
+      .img {
+        svg {
+          width: 70%;
+          height: 70%;
+        }
+      }
+    }
+
+    &__content {
+      width: 61%;
+      display: flex;
+      justify-content: space-between;
+      font-size: 18px;
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+  .header {
+    height: 684px;
+    &__container {
+      margin: 0 auto 200px;
+    }
+  }
+
+  .header-top-row {
+    max-width: 1024px;
+  }
+
+  .header-navmenu {
+    &__item {
+      margin-left: 15px;
+    }
+  }
+
+  .header-info-row {
+    width: 75%;
+    h1 {
+      // margin: 120px auto 22px;
+      font-size: 36px;
+    }
+  }
+
+  .header-form-row {
+    .header-form {
+      &__input {
+        margin-right: 30px;
+
+        label {
+          margin-right: 20px;
+        }
+
+        input {
+          padding-right: 5px;
+        }
+      }
+
+      &__btn {
+        input {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  .intro {
+    margin: 0 auto;
+    padding: 40px 0 0;
+
+    &__head {
+      margin-left: 2%;
+      margin-bottom: 45px;
+    }
+  }
+
+  .intro-content {
+    max-width: 96%;
+    margin-bottom: 75px;
+  }
+
+  .intro-content-block {
+    &__title {
+      font-size: 20px;
+      font-weight: 600;
+    }
+  }
+
+  .main-content {
+    margin: 0 auto 70px;
+    &__box {
+      margin-bottom: 45px;
+    }
+    &__cards {
+      .card-row {
+        margin-bottom: 15px;
+        .card-photo {
+          width: 48.5%;
+        }
+
+        .card-description {
+          width: 48.5%;
+          padding: 20px;
+          box-shadow: 0 2px 20px rgb(21 24 36 / 16%);
+          .card-title {
+            font-size: 24px;
+          }
+          .card-text {
+            font-size: 14px;
+            padding: 20px 0;
+          }
+        }
+      }
+    }
+  }
+
+  .main-content-grid {
+    &__cards {
+      flex-wrap: wrap;
+    }
+
+    &__item:nth-child(n) {
+      max-width: 49%;
+      margin-right: 2%;
+    }
+
+    &__item:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &__text {
+      margin: 35px 10px;
+    }
+
+    &__linck-btn {
+      margin-left: 10px;
+    }
+  }
+  .video {
+    height: 445px;
+  }
+}
+
+@media screen and (max-width: 766px) {
+  .login-form {
+    top: 50px;
+  }
+
+  .header-sticky-content {
+    padding-top: 5px;
+  }
+  .header {
+    height: 512px;
+
+    &__container {
+      margin: 0 auto 20px;
+    }
+  }
+
+  .header-navmenu {
+    display: none;
+  }
+
+  .header-hamburger {
+    display: block;
+  }
+
+  .header-info-row {
+    width: 85%;
+    margin-bottom: 35px;
+    h1 {
+      margin: 15px auto;
+      font-size: 28px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .header-form-row {
+    .header-form {
+      flex-direction: column;
+      align-items: flex-start;
+      &__input {
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        margin-right: 0;
+      }
+
+      &__btn {
+        input {
+          font-size: 18px;
+          padding: 14px 35px;
+        }
+      }
+    }
+  }
+
+  .intro {
+    padding-top: 0;
+
+    &__head {
+      flex-direction: column;
+      align-items: center;
+      margin: 50px auto 30px;
+      padding-left: 10px;
+      max-width: 630px;
+      width: 100%;
+    }
+  }
+  .intro-content {
+    flex-direction: column;
+    margin-bottom: 25px;
+  }
+
+  .intro-content-block {
+    margin-bottom: 25px;
+    &__img {
+      margin-bottom: 15px;
+    }
+
+    &__title {
+      font-size: 20px;
+      height: 25px;
+    }
+
+    &__text {
+      margin-bottom: 15px;
+      font-size: 16px;
+    }
+  }
+
+  .main-content {
+    margin: 0 auto 40px;
+    &__top-row {
+      margin: 0px 5px 20px;
+      display: block;
+    }
+
+    &__title {
+      margin-bottom: 20px;
+    }
+
+    &__box {
+      margin-bottom: 25px;
+
+      &_items-row {
+        flex-direction: column;
+        align-items: center;
+        .image {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 5px;
+          width: 100%;
+          height: 100%;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+
+          &:nth-child(2) {
+            margin: 0;
+          }
+
+          .image-title {
+            position: absolute;
+            bottom: 27px;
+            left: 29px;
+            color: $mainImageColor;
+          }
+        }
+      }
+
+      &_itemsSm-row {
+        .image {
+          &:nth-child(2) {
+            margin-bottom: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  .main-content {
+    &__cards {
+      .card-row {
+        max-width: 1260px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        //align-items: center;
+
+        .card-photo,
+        .card-description {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .main-content-grid {
+    &__item:nth-child(n) {
+      max-width: 100%;
+      margin-right: 0;
+    }
+  }
+
+  .video {
+    height: 320px;
+  }
+
+  .footer {
+    height: inherit;
+    &__wrapper {
+      margin: 15px 30px;
+      flex-direction: column;
+    }
+
+    &__content {
+      width: 100%;
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  html,
+  body {
+    h1 {
+      font-size: 28px;
+    }
+    h3 {
+      font-size: 22px;
+    }
+
+    .linck a span {
+      font-size: 14px;
+    }
+  }
+
+  .main-content {
+    &__cards {
+      .card-row {
+        .card-description {
+          .card-title {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+  .main-content-grid {
+    &__item {
+      margin-bottom: 15px;
+    }
+    &__text {
+      margin: 10px 5px;
+    }
+
+    &__linck-btn {
+      margin-left: 5px;
+    }
+  }
+
+  .footer {
+    height: inherit;
+    &__wrapper {
+      margin: 10px;
+      flex-direction: column;
+    }
+
+    &__content {
+      width: 100%;
+      font-size: 16px;
+      a {
+        font-size: 14px;
+      }
+    }
+  }
+}
