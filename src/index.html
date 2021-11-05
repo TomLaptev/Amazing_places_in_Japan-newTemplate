@@ -1,430 +1,445 @@
 <!DOCTYPE html>
 <html lang="ru">
-   
+
 <head>
-   <meta charset="utf-8">
-   <title>Discovery of Japan!!!</title>
-   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-   <link rel="stylesheet" type="text/css" href="css/styles.min.css">
+    <meta charset="utf-8">
+    <title>Discovery of Japan!?!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/styles.min.css">
 </head>
 
 <body>
-   <!-- HEADER -->
-   <header class="header" id="toTop">
-      <div class="header-sticky-content">
-         @@include('loginForm/loginForm.html')
-         <div class="header-top-row">
-            <div class="header-logo">
-               @@include('image/odigo-logo.svg')
-               <ul class="header-hamburger-menu">
-                  <li class="scroll header-hamburger-menu__item" data-scroll="articles"><span>Articles</span>
-                  </li>
-                  <li class="scroll header-hamburger-menu__item" data-scroll="locations"><span>Locations</span>
-                  </li>
-                  <li class="scroll header-hamburger-menu__item" data-scroll="videos"><span>Videos</span></li>
-                  <li class="header-hamburger-menu__item coll-form"><span>Sign in</span></li>
-               </ul>
+    <!-- HEADER -->
+    <header class="header" id="toTop">
+        <div class="login-container">
+            <div class="login-container__outer">
+                <form class="login-container__form" method="post">
+                    <button type="reset" class="hide-form"> X </button>
+                    <input type="text" placeholder="user">
+                    <input type="password" placeholder="password">
+                    <a href="">
+                        <p> Don't have an account? Sign up</p>
+                    </a>
+                    <button type="submit"> Sign in </button>
+                </form>
             </div>
-            <ul class="header-navmenu">
-               <li class="scroll header-navmenu__item" data-scroll="articles"><span>Articles</span></li>
-               <li class="scroll header-navmenu__item" data-scroll="locations"><span>Location</span></li>
-               <li class="scroll header-navmenu__item" data-scroll="videos"><span>Videos</span></li>
-               <li class="header-navmenu__item coll-form"><span>Sign in</span></li>
-            </ul>
-            <div class="header-hamburger" hidden>
-               @@include('image/menu.svg')
+        </div>
+        <div class="header-sticky-content">
+            <div class="header-top-row">
+                <div class="header-logo">
+                    @@include('image/odigo-logo.svg')
+                    <ul class="header-hamburger-menu">
+                        <li class="scroll header-hamburger-menu__item" data-scroll="articles"><span>Articles</span></li>
+                        <li class="scroll header-hamburger-menu__item" data-scroll="locations"><span>Locations</span>
+                        </li>
+                        <li class="scroll header-hamburger-menu__item" data-scroll="videos"><span>Videos</span></li>
+                        <li class="header-hamburger-menu__item coll-form"><span>Sign in</span></li>
+                    </ul>
+                </div>
+                <ul class="header-navmenu">
+                    <li class="scroll header-navmenu__item" data-scroll="articles"><span>Articles</span></li>
+                    <li class="scroll header-navmenu__item" data-scroll="locations"><span>Location</span></li>
+                    <li class="scroll header-navmenu__item" data-scroll="videos"><span>Videos</span></li>
+                    <li class="header-navmenu__item coll-form"><span>Sign in</span></li>
+                </ul>
+                <div class="header-hamburger" hidden>
+                    @@include('image/menu.svg')
+                </div>
             </div>
-         </div>
-      </div>
-      <div class="ancher"></div>
-      <div class="header__container">
-         <div class="header-info-row">
-            <div class="header-info-row__title">
-               <h1>Discover Amazing places in Japan</h1>
+        </div>
+        <div class="ancher"></div>
+        <div class="header__container">
+            <div class="header-info-row">
+                <div class="header-info-row__title">
+                    <h1>Discover Amazing places in Japan</h1>
+                </div>
+                <div class="header-info-row__text">
+                    <p>Jump off balcony, onto stranger's head. Chase ball of string hide when guests come
+                        over. Being gorgeous with belly side up i could pee on this if i had the energy but under
+                        the
+                        bed, for attack
+                        the child, open the door,
+                    </p>
+                </div>
             </div>
-            <div class="header-info-row__text">
-               <p>Jump off balcony, onto stranger's head. Chase ball of string hide when guests come
-                  over. Being gorgeous with belly side up i could pee on this if i had the energy but under
-                  the
-                  bed, for attack
-                  the child, open the door,
-               </p>
+            <div class="header-form-row">
+                <form class="header-form" action="" method="post">
+                    <div class="header-form__input">
+                        <label for="inp-1"> <img src="img/Oval.svg" alt="Oval"></label>
+                        <input type="text" id="inp-1" name="name" placeholder="What would you like to do?">
+                    </div>
+                    <div class="header-form__input">
+                        <label for="inp-2"> <img src="img/Oval.svg" alt="Oval"></label>
+                        <input type="text" id="inp-2" name="name" placeholder="Where would you like togo?">
+                    </div>
+                    <div class="header-form__btn">
+                        <input type="submit" name="submit" value="SEARCH">
+                        <input type="hidden" name="formData" value="Заявка с сайта!!!">
+                    </div>
+                </form>
             </div>
-         </div>
-         <div class="header-form-row">
-            <form class="header-form" action="" method="post">
-               <div class="header-form__input">
-                  <label for="inp-1"> <img src="img/Oval.svg" alt="Oval"></label>
-                  <input type="text" id="inp-1" name="name" placeholder="What would you like to do?">
-               </div>
-               <div class="header-form__input">
-                  <label for="inp-2"> <img src="img/Oval.svg" alt="Oval"></label>
-                  <input type="text" id="inp-2" name="name" placeholder="Where would you like togo?">
-               </div>
-               <div class="header-form__btn">
-                  <input type="submit" name="submit" value="SEARCH">
-                  <input type="hidden" name="formData" value="Заявка с сайта!!!">
-               </div>
-            </form>
-         </div>
-      </div>
-   </header>
-   <!-- INTRO -->
-   <div class="intro">
-      .
-      <div class="intro__head">
-         <h3>Benefits of Odigo</h3>
-      </div>
-      <div class="intro-content">
-         <div class="intro-content-block">
-            <div class="intro-content-block__img">
-               <img src="img/content/icon_1.svg" alt="1">
+        </div>
+    </header>
+
+    <!-- article -->
+    <div class="article">
+        <div class="article__title">
+            <h3>Benefits of Odigo</h3>
+        </div>
+        <div class="article-content">
+            <div class="article-content__column">
+                <div class="article-content__column--image">
+                    <img src="img/content/icon_1.svg" alt="1">
+                </div>
+                <div class="article-content__column--title">
+                    Welcome to Odigo!
+                </div>
+                <div class="article-content__column--text">
+                    Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
+                </div>
+                <div class="article-content__link">
+                    <a href="">
+                        <span>LEARN MORE</span>
+                        @@include('image/content/arrow.svg')
+                    </a>
+                </div>
             </div>
-            <div class="intro-content-block__title">
-               Welcome to Odigo!
+            <div class="article-content__column">
+                <div class="article-content__column--image">
+                    <img src="img/content/icon_2.svg" alt="2">
+                </div>
+                <div class="article-content__column--title">
+                    Your Personal Japan Guide
+                </div>
+                <div class="article-content__column--text">
+                    Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
+                </div>
+                <div class="article-content__link">
+                    <a href="">
+                        <span>LEARN MORE</span>
+                        @@include('image/content/arrow.svg')
+                    </a>
+                </div>
             </div>
-            <div class="intro-content-block__text">
-               Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
+            <div class="article-content__column">
+                <div class="article-content__column--image">
+                    <img src="img/content/icon_3.svg" alt="3">
+                </div>
+                <div class="article-content__column--title">
+                    Promoting Local Businesses
+                </div>
+                <div class="article-content__column--text">
+                    Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
+                </div>
+                <div class="article-content__link">
+                    <a href="">
+                        <span>LEARN MORE</span>
+                        @@include('image/content/arrow.svg')
+                    </a>
+                </div>
             </div>
-            <div class="linck">
-               <a href="">
-                  <span>LEARN MORE</span>
-                  @@include('image/content/arrow.svg')
-               </a>
+        </div>
+    </div>
+
+
+    <div class="section section-gallery">
+        <div class="section__head">
+            <div class="section__head--title">
+                <h3>Get inspired for your next trip</h3>
             </div>
-         </div>
-         <div class="intro-content-block">
-            <div class="intro-content-block__img">
-               <img src="img/content/icon_2.svg" alt="2">
+            <div class="section__link">
+                <a href="">
+                    <span>VIEW ALL</span>
+                    @@include('image/content/arrow.svg')
+                </a>
             </div>
-            <div class="intro-content-block__title">
-               Your Personal Japan Guide
+        </div>
+        <div class="section-gallery__row">
+            <div class=" section-gallery__item section-gallery__top-row-item">
+                <img src="img/content/Image1.png" alt="01">
+                <div class="section-gallery__item--title">
+                    <h1> Mount Fuji</h1>
+                </div>
+                <div class="section-gallery__item--overlay"></div>
             </div>
-            <div class="intro-content-block__text">
-               Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
+            <div class="section-gallery__item section-gallery__top-row-item">
+                <img src="img/content/Image2.png" alt="02">
+                <div class="section-gallery__item--title">
+                    <h1> Kyoto</h1>
+                </div>
+                <div class="section-gallery__item--overlay"></div>
             </div>
-            <div class="linck">
-               <a href="">
-                  <span>LEARN MORE</span>
-                  @@include('image/content/arrow.svg')
-               </a>
+        </div>
+
+        <div class="section-gallery__row">
+            <div class="section-gallery__item section-gallery__bottom-row-item">
+                <img src="img/content/Image3.png" alt="03">
+                <div class="section-gallery__item--title">
+                    <h1> Tokyo</h1>
+                </div>
+                <div class="section-gallery__item--overlay"></div>
             </div>
-         </div>
-         <div class="intro-content-block">
-            <div class="intro-content-block__img">
-               <img src="img/content/icon_3.svg" alt="3">
+            <div class="section-gallery__item section-gallery__bottom-row-item">
+                <img src="img/content/Image4.png" alt="04">
+                <div class="section-gallery__item--title">
+                    <h1> Niigata</h1>
+                </div>
+                <div class="section-gallery__item--overlay"></div>
             </div>
-            <div class="intro-content-block__title">
-               Promoting Local Businesses
+            <div class="section-gallery__item section-gallery__bottom-row-item">
+                <img src="img/content/Image5.png" alt="05">
+                <div class="section-gallery__item--title">
+                    <h1> Sapporo</h1>
+                </div>
+                <div class="section-gallery__item--overlay"></div>
             </div>
-            <div class="intro-content-block__text">
-               Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
+        </div>
+    </div>
+
+    <div class="section section-cards">
+        <div class="section-cards__row">
+            <div class="section-cards__photo">
+                <img src="img/content/card1.png" alt="001">
             </div>
-            <div class="linck">
-               <a href="">
-                  <span>LEARN MORE</span>
-                  @@include('image/content/arrow.svg')
-               </a>
-            </div>
-         </div>
-      </div>
-   </div>
-   <!-- MAIN -->
-   <div class="main">
-      <div class="main-content main-content-gallery">
-         <div class="main-content__top-row">
-            <div class="main-content__title">
-               <h3>Get inspired for your next trip</h3>
-            </div>
-            <div class="linck">
-               <a href="">
-                  <span>VIEW ALL</span>
-                  @@include('image/content/arrow.svg')
-               </a>
-            </div>
-         </div>
-         <div class="main-content__box">
-            <div class="main-content__box_itemsLg-row main-content__box_items-row">
-               <div class="image">
-                  <img src="img/content/Image1.png" alt="01">
-                  <div class="image-title">
-                     <h1> Mount Fuji</h1>
-                  </div>
-                  <div class="image-overlay"></div>
-               </div>
-               <div class="image">
-                  <img src="img/content/Image2.png" alt="02">
-                  <div class="image-title">
-                     <h1> Kyoto</h1>
-                  </div>
-                  <div class="image-overlay"></div>
-               </div>
-            </div>
-            <div class="main-content__box_itemsSm-row main-content__box_items-row">
-               <div class="image">
-                  <img src="img/content/Image3.png" alt="03">
-                  <div class="image-title">
-                     <h1>Tokyo</h1>
-                  </div>
-                  <div class="image-overlay"></div>
-               </div>
-               <div class="image">
-                  <img src="img/content/Image4.png" alt="04">
-                  <div class="image-title">
-                     <h1> Niigata</h1>
-                  </div>
-                  <div class="image-overlay"></div>
-               </div>
-               <div class="image">
-                  <img src="img/content/Image5.png" alt="05">
-                  <div class="image-title">
-                     <h1> Sapporo</h1>
-                  </div>
-                  <div class="image-overlay"></div>
-               </div>
-            </div>
-         </div>
-         <div class="main-content__cards">
-            <div class="card-row">
-               <div class="card-photo">
-                  <img src="img/content/card1.png" alt="001">
-               </div>
-               <div class="card-description" id="articles">
-                  <div class="card-title">Prefecture in Focus: Tottori</div>
-                  <div class="card-text">
-                     Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
-                     Being gorgeous
-                     with
-                     belly side up i could pee on this if i had the energy but under the bed, for attack the
-                     child, open the
-                     door
-                  </div>
-                  <div class="linck">
-                     <a href="">
+            <div class="section-cards__description" id="articles">
+                <div class="section-cards__description--title">Prefecture in Focus: Tottori</div>
+                <div class="section-cards__description--text">
+                    Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
+                    Being gorgeous
+                    with
+                    belly side up i could pee on this if i had the energy but under the bed, for attack the
+                    child, open the
+                    door
+                </div>
+                <div class="section__link">
+                    <a href="">
                         <span>VIEW PREFECTURE</span>
                         @@include('image/content/arrow.svg')
-                     </a>
-                  </div>
-               </div>
+                    </a>
+                </div>
             </div>
-            <div class="card-row">
-               <div class="card-description">
-                  <div class="card-title">
-                     <p>Featured Neighborhood:</p>
-                     <p> Kyoto’s Arashiyama</p>
-                  </div>
-                  <div class="card-text">
-                     Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
-                     Being gorgeous
-                     with
-                     belly side up i could pee on this if i had the energy but under the bed, for attack the
-                     child, open the
-                     door
-                  </div>
-                  <div class="linck">
-                     <a href="">
+        </div>
+        <div class="section-cards__row">
+            <div class="section-cards__description" id="articles">
+                <div class="section-cards__description--title">
+                    <p> Featured Neighborhood:</p>
+                    <p></p>
+                </div>
+                <div class="section-cards__description--text">
+                    Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
+                    Being gorgeous
+                    with
+                    belly side up i could pee on this if i had the energy but under the bed, for attack the
+                    child, open the
+                    door
+                </div>
+                <div class="section__link">
+                    <a href="">
                         <span>VIEW PREFECTURE</span>
                         @@include('image/content/arrow.svg')
-                     </a>
-                  </div>
-               </div>
-               <div class="card-photo">
-                  <img src="img/content/card2.png" alt="002">
-               </div>
+                    </a>
+                </div>
             </div>
-         </div>
-      </div>
-      <div class="main-content main-content-grid" id="locations">
-         <div class="main-content__top-row">
-            <div class="main-content__title">
-               <h3>Today top places to visit</h3>
+            <div class="section-cards__photo">
+                <img src="img/content/card2.png" alt="002">
             </div>
-         </div>
-         <div class="main-content-grid__cards">
-            <div class="main-content-grid__item">
-               <div class="main-content-grid__photo">
-                  <img src="img/content/grid-Image1.png" alt="g1">
-                  <div class="main-content-grid__overlay">
-                     <div class="name">NAGOYA</div>
-                     <div class="data">
-                        <div class="likes">
-                           <span>221</span>
-                           @@include('image/content/heart-ico.svg')
-                        </div>
-                        <div class="comments">
-                           <span>50</span>
-                           @@include('image/content/comment-ico.svg')
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="main-content-grid__text">
-                  Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
-                  Being gorgeous with belly side up i could pee on this.
-               </div>
-               <a class="main-content-grid__linck-btn" href="">SEE MORE</a>
+        </div>
+    </div>
+
+    <div class="section section-grid" id="locations">
+        <div class="section__head">
+            <div class="section__head--title">
+                <h3>Today top places to visit</h3>
             </div>
-            <div class="main-content-grid__item">
-               <div class="main-content-grid__photo">
-                  <img src="img/content/grid-Image2.png" alt="g2">
-                  <div class="main-content-grid__overlay">
-                     <div class="name">NIIGATA</div>
-                     <div class="data">
-                        <div class="likes">
-                           <span>221</span>
-                           @@include('image/content/heart-ico.svg')
+        </div>
+
+        <div class="section-grid__contant">
+            <div class="section-grid__item">
+                <div class="section-grid__image">
+                    <img src="img/content/grid-Image1.png" alt="g1">
+                    <div class="section-grid__overlay">
+                        <div class="section-grid__overlay--name">NAGOYA</div>
+                        <div class="section-grid__overlay--data">
+                            <div class="section-grid__overlay--likes">
+                                <span>221</span>
+                                @@include('image/content/heart-ico.svg')
+                            </div>
+                            <div class="section-grid__overlay--comments">
+                                <span>50</span>
+                                @@include('image/content/comment-ico.svg')
+                            </div>
                         </div>
-                        <div class="comments">
-                           <span>50</span>
-                           @@include('image/content/comment-ico.svg')
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="main-content-grid__text">
-                  Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
-                  Being gorgeous with belly side up i could pee on this.
-               </div>
-               <a class="main-content-grid__linck-btn" href="">SEE MORE</a>
+                    </div>
+                </div>
+                <div class="section-grid__text">
+                    Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
+                    Being gorgeous with belly side up i could pee on this.
+                </div>
+                <a class="section-grid__link-btn" href="">SEE MORE</a>
             </div>
-            <div class="main-content-grid__item">
-               <div class="main-content-grid__photo">
-                  <img src="img/content/grid-Image3.png" alt="g3">
-                  <div class="main-content-grid__overlay">
-                     <div class="name">OSAKA</div>
-                     <div class="data">
-                        <div class="likes">
-                           <span>221</span>
-                           @@include('image/content/heart-ico.svg')
+
+            <div class="section-grid__item">
+                <div class="section-grid__image">
+                    <img src="img/content/grid-Image2.png" alt="g2">
+                    <div class="section-grid__overlay">
+                        <div class="section-grid__overlay--name">NIIGATA</div>
+                        <div class="section-grid__overlay--data">
+                            <div class="section-grid__overlay--likes">
+                                <span>221</span>
+                                @@include('image/content/heart-ico.svg')
+                            </div>
+                            <div class="section-grid__overlay--comments">
+                                <span>50</span>
+                                @@include('image/content/comment-ico.svg')
+                            </div>
                         </div>
-                        <div class="comments">
-                           <span>50</span>
-                           @@include('image/content/comment-ico.svg')
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="main-content-grid__text">
-                  Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
-                  Being gorgeous with belly side up i could pee on this.
-               </div>
-               <a class="btn" href="">
-                  <a class="main-content-grid__linck-btn" href="">SEE MORE</a>
-               </a>
+                    </div>
+                </div>
+                <div class="section-grid__text">
+                    Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
+                    Being gorgeous with belly side up i could pee on this.
+                </div>
+                <a class="section-grid__link-btn" href="">SEE MORE</a>
             </div>
-            <div class="main-content-grid__item">
-               <div class="main-content-grid__photo">
-                  <img src="img/content/grid-Image4.png" alt="g4">
-                  <div class="main-content-grid__overlay">
-                     <div class="name">SAITAMA</div>
-                     <div class="data">
-                        <div class="likes">
-                           <span>221</span>
-                           @@include('image/content/heart-ico.svg')
+
+            <div class="section-grid__item">
+                <div class="section-grid__image">
+                    <img src="img/content/grid-Image3.png" alt="g3">
+                    <div class="section-grid__overlay">
+                        <div class="section-grid__overlay--name">OSAKA</div>
+                        <div class="section-grid__overlay--data">
+                            <div class="section-grid__overlay--likes">
+                                <span>221</span>
+                                @@include('image/content/heart-ico.svg')
+                            </div>
+                            <div class="section-grid__overlay--comments">
+                                <span>50</span>
+                                @@include('image/content/comment-ico.svg')
+                            </div>
                         </div>
-                        <div class="comments">
-                           <span>50</span>
-                           @@include('image/content/comment-ico.svg')
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="main-content-grid__text">
-                  Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
-                  Being gorgeous with belly side up i could pee on this.
-               </div>
-               <a class="main-content-grid__linck-btn" href="">SEE MORE</a>
+                    </div>
+                </div>
+                <div class="section-grid__text">
+                    Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
+                    Being gorgeous with belly side up i could pee on this.
+                </div>
+                <a class="section-grid__link-btn" href="">SEE MORE</a>
             </div>
-            <div class="main-content-grid__item">
-               <div class="main-content-grid__photo">
-                  <img src="img/content/grid-Image5.png" alt="g5">
-                  <div class="main-content-grid__overlay">
-                     <div class="name">UENO</div>
-                     <div class="data">
-                        <div class="likes">
-                           <span>221</span>
-                           @@include('image/content/heart-ico.svg')
+
+            <div class="section-grid__item">
+                <div class="section-grid__image">
+                    <img src="img/content/grid-Image4.png" alt="g4">
+                    <div class="section-grid__overlay">
+                        <div class="section-grid__overlay--name">SAITAMA</div>
+                        <div class="section-grid__overlay--data">
+                            <div class="section-grid__overlay--likes">
+                                <span>221</span>
+                                @@include('image/content/heart-ico.svg')
+                            </div>
+                            <div class="section-grid__overlay--comments">
+                                <span>50</span>
+                                @@include('image/content/comment-ico.svg')
+                            </div>
                         </div>
-                        <div class="comments">
-                           <span>50</span>
-                           @@include('image/content/comment-ico.svg')
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="main-content-grid__text">
-                  Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
-                  Being gorgeous with belly side up i could pee on this.
-               </div>
-               <a class="main-content-grid__linck-btn" href="">SEE MORE</a>
+                    </div>
+                </div>
+                <div class="section-grid__text">
+                    Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
+                    Being gorgeous with belly side up i could pee on this.
+                </div>
+                <a class="section-grid__link-btn" href="">SEE MORE</a>
             </div>
-            <div class="main-content-grid__item">
-               <div class="main-content-grid__photo">
-                  <img src="img/content/grid-Image6.png" alt="g6">
-                  <div class="main-content-grid__overlay">
-                     <div class="name">SHIBUYA</div>
-                     <div class="data">
-                        <div class="likes">
-                           <span>221</span>
-                           @@include('image/content/heart-ico.svg')
+
+            <div class="section-grid__item">
+                <div class="section-grid__image">
+                    <img src="img/content/grid-Image5.png" alt="g5">
+                    <div class="section-grid__overlay">
+                        <div class="section-grid__overlay--name">UENO</div>
+                        <div class="section-grid__overlay--data">
+                            <div class="section-grid__overlay--likes">
+                                <span>221</span>
+                                @@include('image/content/heart-ico.svg')
+                            </div>
+                            <div class="section-grid__overlay--comments">
+                                <span>50</span>
+                                @@include('image/content/comment-ico.svg')
+                            </div>
                         </div>
-                        <div class="comments">
-                           <span>50</span>
-                           @@include('image/content/comment-ico.svg')
+                    </div>
+                </div>
+                <div class="section-grid__text">
+                    Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
+                    Being gorgeous with belly side up i could pee on this.
+                </div>
+                <a class="section-grid__link-btn" href="">SEE MORE</a>
+            </div>
+
+            <div class="section-grid__item">
+                <div class="section-grid__image">
+                    <img src="img/content/grid-Image6.png" alt="g6">
+                    <div class="section-grid__overlay">
+                        <div class="section-grid__overlay--name">SHIBUYA</div>
+                        <div class="section-grid__overlay--data">
+                            <div class="section-grid__overlay--likes">
+                                <span>221</span>
+                                @@include('image/content/heart-ico.svg')
+                            </div>
+                            <div class="section-grid__overlay--comments">
+                                <span>50</span>
+                                @@include('image/content/comment-ico.svg')
+                            </div>
                         </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="main-content-grid__text">
-                  Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
-                  Being gorgeous with belly side up i could pee on this.
-               </div>
-               <a class="main-content-grid__linck-btn" href="">SEE MORE</a>
+                    </div>
+                </div>
+                <div class="section-grid__text">
+                    Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
+                    Being gorgeous with belly side up i could pee on this.
+                </div>
+                <a class="section-grid__link-btn" href="">SEE MORE</a>
             </div>
-         </div>
-      </div>
-      <div class="video" id="videos">
-         <a href=""><img src="img/content/start.png" alt="start"></a>
-      </div>
-   </div>
-   <footer class="footer">
-      <div class="footer__wrapper">
-         <div class="footer__logo">
-            <div class="img">
-               @@include('image/odigo-logo.svg')
+
+        </div>
+    </div>
+
+    <div class="section section-video" id="videos">
+        <a href=""><img src="img/content/start.png" alt="start"></a>
+    </div>
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__logo">
+                <div class="img">
+                    @@include('image/odigo-logo.svg')
+                </div>
             </div>
-         </div>
-         <div class="footer__content">
-            <ul class="link-1">
-               <li>Company</li>
-               <li><a href="">About </a></li>
-               <li><a href="">Team</a></li>
-               <li><a href="">Careers</a></li>
-               <li><a href="">Privacy Policy</a></li>
-            </ul>
-            <ul class="link-2">
-               <li>Locations</li>
-               <li><a href="">Tokyo </a></li>
-               <li><a href="">Kyoto</a></li>
-               <li><a href="">Osaka</a></li>
-               <li><a href="">Hokkaido</a></li>
-            </ul>
-            <ul class="link-3">
-               <li>Social Media</li>
-               <li><a href="">Facebook </a></li>
-               <li><a href="">Twitter</a></li>
-               <li><a href="">Instagram</a></li>
-               <li><a href="">Youtube</a></li>
-            </ul>
-         </div>
-      </div>
-      <div class="btnGoTop" hidden>
-         <div class="btnGoTop__wrapper">
-            <i class="scroll" title="Back to Top" data-scroll="toTop"></i>
-         </div>
-      </div>
-   </footer>
-   <script src="js/scripts.min.js"></script>
+            <div class="footer__content">
+                <ul class="link-1">
+                    <li>Company</li>
+                    <li><a href="">About </a></li>
+                    <li><a href="">Team</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                </ul>
+                <ul class="link-2">
+                    <li>Locations</li>
+                    <li><a href="">Tokyo </a></li>
+                    <li><a href="">Kyoto</a></li>
+                    <li><a href="">Osaka</a></li>
+                    <li><a href="">Hokkaido</a></li>
+                </ul>
+                <ul class="link-3">
+                    <li>Social Media</li>
+                    <li><a href="">Facebook </a></li>
+                    <li><a href="">Twitter</a></li>
+                    <li><a href="">Instagram</a></li>
+                    <li><a href="">Youtube</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="btn-up">
+            <div id="go-up" class="scroll" title="Back to Top" data-scroll="toTop" hidden></div>
+        </div>
+    </footer>
+    <script src="js/scripts.min.js"></script>
 </body>
 
 </html>

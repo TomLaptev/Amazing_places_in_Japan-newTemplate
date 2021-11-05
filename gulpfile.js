@@ -87,10 +87,10 @@ function css() {
 
 function js() {
   return src([
-    "node_modules/progressbar.js/dist/progressbar.js",
     "node_modules/scroll-to-element/build/scrollToElement.js",
       source_folder + "/**/*.js",
-       "!" + path.src.js, path.src.js])
+       "!" + path.src.js, 
+       path.src.js])
     //.pipe(plumber())
     .pipe(concat("scripts.js"))
     .pipe(dest(path.build.js))

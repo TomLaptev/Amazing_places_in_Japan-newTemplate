@@ -3,6 +3,7 @@ body {
   font-family: "Lato";
   font-size: 16px;
 }
+
 .sticky {
   position: fixed;
   max-width: 1440px;
@@ -17,6 +18,7 @@ body {
   svg {
     width: 30px;
     height: 30px;
+
     path {
       fill: $hamburgerColor;
     }
@@ -58,7 +60,7 @@ body {
   }
 }
 
-.isOpen {
+.menuIsVisible {
   width: 200px;
 }
 
@@ -121,6 +123,7 @@ body {
     span {
       font-size: 18px;
       color: $headerTextColor;
+
       &:hover {
         text-decoration: $headerNavmenuTdecorColorHover 2px underline;
       }
@@ -185,6 +188,7 @@ body {
         font-size: 24px;
         padding: 14px 35px;
         color: #fff;
+
         &:hover {
           background: $headerFormBtnBgColorHover;
         }
@@ -193,52 +197,14 @@ body {
   }
 }
 
-.intro {
-  max-width: 1260px;
-  margin: -220px auto 130px;
-  padding: 90px 0 10px;
-  background: $introBgColor;
-  box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
-
-  &__head {
-    margin-left: 8%;
-    margin-bottom: 125px;
-  }
-}
-
-.intro-content {
-  display: flex;
-  align-items: center;
-  margin: 0 auto;
-  margin-bottom: 95px;
-  max-width: 84%;
-}
-
-.intro-content-block {
-  padding-right: 15px;
-
-  &__img {
-    margin-bottom: 35px;
-  }
-
-  &__title {
-    font-size: 24px;
-    line-height: 1;
-    height: 55px;
-  }
-
-  &__text {
-    margin-bottom: 40px;
-    font-size: 16px;
-  }
-}
-
-.linck {
+.article-content__link,
+.section__link {
   a {
     font-size: 16px;
-    color: $linckColor;
+    color: $linkColor;
+
     &:hover {
-      color: $linckColorHover;
+      color: $linkColorHover;
     }
 
     svg {
@@ -246,133 +212,177 @@ body {
 
       &:hover {
         path {
-          fill: $linckColorHover;
+          fill: $linkColorHover;
         }
       }
     }
   }
 }
 
-.main {
-  max-width: 1440px;
-  margin: 0px auto;
+.article {
+  max-width: 1260px;
+  margin: -220px auto 130px;
+  padding-top: 105px;
+  background: $articleBgColor;
+  box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
+  &__title {
+    margin-left: 8%;
+    margin-bottom: 125px;
+  }
 }
 
-.main-content {
-  max-width: 1260px;
-  padding: 0px;
+.article-content {
+  display: flex;
+  align-items: center;
   margin: 0 auto;
-  &__top-row {
+  padding-bottom: 105px;
+  max-width: 84%;
+
+  &__column {
+    // margin-bottom: 105px;
+    padding-right: 15px;
+
+    &--image {
+      margin-bottom: 35px;
+    }
+
+    &--title {
+      font-size: 24px;
+      line-height: 1;
+      height: 55px;
+    }
+
+    &--text {
+      margin-bottom: 40px;
+      font-size: 16px;
+    }
+  }
+}
+
+.section {
+  max-width: 1260px;
+  margin: 0px auto;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__head {
+    padding: 0px;
     margin: 0 5px 50px;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-  }
 
-  &__title {
-    h3 {
-      position: relative;
-
-      display: inline-block;
-
-      &::before {
-        content: "";
-        position: absolute;
-        width: 55%;
-        height: 3px;
-        left: 0;
-        top: 2.6rem;
-        background: #006dfe;
-      }
-    }
-  }
-
-  &__box {
-    margin-bottom: 125px;
-    &_items-row {
-      max-width: 1260px;
-      margin-bottom: 10px;
-      display: flex;
-
-      .image {
+    &--title {
+      h3 {
         position: relative;
-        width: 49.6%;
+        display: inline-block;
 
-        img {
-          width: 100%;
-          height: 100%;
-        }
-
-        &:nth-child(2) {
-          margin-left: 0.8%;
-        }
-
-        .image-title {
+        &::before {
+          content: "";
           position: absolute;
-          bottom: 27px;
-          left: 29px;
-          color: $mainImageColor;
-          z-index: 10;
-        }
-
-        .image-overlay {
-          position: absolute;
-          top: 0;
+          width: 55%;
+          height: 3px;
           left: 0;
-          width: 100%;
-          height: 100%;
-          background: rgba(21, 24, 36, 0.4);
-        }
-      }
-    }
-
-    &_itemsSm-row {
-      .image {
-        width: 32.8%;
-        &:nth-child(2) {
-          margin: 0 0.8%;
+          top: 2.6rem;
+          background: #006dfe;
         }
       }
     }
   }
 }
 
-.main-content {
-  &__cards {
-    .card-row {
-      max-width: 1260px;
-      margin-bottom: 100px;
-      display: flex;
-      justify-content: space-between;
+.section-gallery {
+  margin-bottom: 125px;
 
-      .card-photo {
-        display: flex;
-        width: 47.2%;
-      }
+  &__row {
+    margin-bottom: 10px;
+    display: flex;
+  }
 
-      img {
-        width: 100%;
-        height: 100%;
-      }
+  &__row:last-child {
+    margin-bottom: 0px;
+  }
 
-      .card-description {
-        width: 47.2%;
-        display: flex;
-        padding: 40px;
-        flex-direction: column;
-        justify-content: space-between;
-        box-shadow: 0 2px 20px rgb(21 24 36 / 16%);
+  &__item {
+    display: flex;
+  }
 
-        .card-title {
-          font-size: 30px;
-        }
-      }
+  &__top-row-item {
+    position: relative;
+    width: 49.6%;
+
+    &:nth-child(2) {
+      margin-left: 0.8%;
+    }
+  }
+
+  &__bottom-row-item {
+    position: relative;
+    width: 32.8%;
+
+    &:nth-child(2) {
+      margin: 0 0.8%;
+    }
+  }
+
+  &__item {
+    &--title {
+      position: absolute;
+      bottom: 25px;
+      left: 30px;
+      color: $mainImageColor;
+      z-index: 10;
+    }
+
+    &--overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(21, 24, 36, 0.4);
     }
   }
 }
 
-.main-content-grid {
-  &__cards {
+.section-cards {
+  margin-bottom: 100px;
+
+  &__row {
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__photo {
+    display: flex;
+    width: 48%;
+  }
+
+  &__description {
+    width: 48%;
+    display: flex;
+    padding: 40px;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 2px 20px rgb(21 24 36 / 16%);
+
+    &--title {
+      font-size: 30px;
+    }
+
+    &--text {
+      font-size: 16px;
+      line-height: 1.2;
+    }
+  }
+}
+
+.section-grid {
+  &__contant {
     display: flex;
     flex-wrap: wrap;
   }
@@ -388,14 +398,9 @@ body {
     margin-right: 0;
   }
 
-  &__photo {
+  &__image {
     position: relative;
     display: flex;
-
-    img {
-      width: 100%;
-      height: 100%;
-    }
   }
 
   &__overlay {
@@ -410,22 +415,22 @@ body {
     color: #fff;
     background: rgba(21, 24, 36, 0.6);
 
-    .data {
+    &--data {
       display: flex;
+    }
 
-      .likes,
-      .comments {
-        display: flex;
-        align-items: center;
+    &--likes,
+    &--comments {
+      display: flex;
+      align-items: center;
 
-        span {
-          margin-right: 5px;
-        }
+      span {
+        margin-right: 5px;
       }
+    }
 
-      .likes {
-        margin-right: 15px;
-      }
+    &--likes {
+      margin-right: 15px;
     }
   }
 
@@ -434,7 +439,7 @@ body {
     line-height: 1.5;
   }
 
-  &__linck-btn {
+  &__link-btn {
     display: inline-block;
     width: 120px;
     padding: 10px 20px;
@@ -442,13 +447,15 @@ body {
     background: $mainGridBgBtnColor;
     margin-left: 20px;
     color: #fff;
+
     &:hover {
       background: $mainGridBgBtnColorHover;
     }
   }
 }
 
-.video {
+.section-video {
+  margin-bottom: 0;
   max-width: 1440px;
   height: 609px;
   display: flex;
@@ -464,7 +471,7 @@ body {
 
   a {
     display: flex;
-    height: 18.4%;
+    height: 18.5%;
     &:hover {
       height: 20%;
       transition: height 0.4s linear;
@@ -481,7 +488,7 @@ body {
   margin: 0 auto;
   height: 355px;
   display: flex;
-  background: #0e1d28; 
+  background: #0e1d28;
   color: #fff;
 
   &__wrapper {
@@ -522,23 +529,20 @@ body {
   }
 }
 
-.btnGoTop {
+.btn-up {
+  position: absolute;
   max-width: 1440px;
   width: 100%;
   bottom: 0px;
+  display: flex;
+  justify-content: flex-end;
 
-  &__wrapper {
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  i {
-    display: block;
+  #go-up {
+    bottom: 0;
     width: 60px;
     height: 40px;
     background: url("../img/go-to-top.png") no-repeat 50% 50%;
     background-color: $bgGoTopColor;
-
     border-radius: 3px 3px 0 0;
   }
 }

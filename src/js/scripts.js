@@ -4,23 +4,23 @@ window.onload = function() {
   const dropDownMenu = document.querySelector(".header-hamburger-menu");
 
   btnMenu.addEventListener("click", function() {
-    dropDownMenu.classList.toggle("isOpen");
+    dropDownMenu.classList.toggle("menuIsVisible");
   });
   dropDownMenu.addEventListener("click", function() {
-    dropDownMenu.classList.toggle("isOpen");
+    dropDownMenu.classList.toggle("menuIsVisible");
   });
 
   /*----------------loginForm dropdown---------------------*/
-  const del = document.querySelector(".delete");
+  const del = document.querySelector(".hide-form");
   const collForm = document.querySelectorAll(".coll-form");
-  const loginForm = document.querySelector(".login-form__outer");
+  const loginForm = document.querySelector(".login-container__outer");
   collForm.forEach(el => {
     el.addEventListener("click", function() {
-      loginForm.classList.toggle("formOpen");
+      loginForm.classList.toggle("login-form-appear");
     });
   });
   del.addEventListener("click", function() {
-    loginForm.classList.remove("formOpen");
+    loginForm.classList.remove("login-form-appear");
   });
 
   /*----------------Sticky element-----------*/
@@ -42,7 +42,8 @@ window.onload = function() {
 
   /*----------------Smooth scroll to Top-----------*/
   function myToTop() {
-    const toTop = document.querySelector(".btnGoTop");
+    const toTop = document.getElementById("go-up");    
+
     if (window.pageYOffset > 200) {
       toTop.classList.add("go-top");
     } else {
