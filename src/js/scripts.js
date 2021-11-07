@@ -42,7 +42,7 @@ window.onload = function() {
 
   /*----------------Smooth scroll to Top-----------*/
   function myToTop() {
-    const toTop = document.getElementById("go-up");    
+    const toTop = document.querySelector(".go-up");    
 
     if (window.pageYOffset > 200) {
       toTop.classList.add("go-top");
